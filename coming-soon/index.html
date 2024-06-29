@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="هي صفحة هبوط للتطبيق جوال ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>صفحة انطلاق قريبا</title>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+              var sc = $(window).scrollTop();
+              
+              var of= $(".form_group").offset().top
+              console.log(of);
+
+              if (sc > 900){
+                  $(".img_mario").css("transform","translateY(0%)") ;
+                  $(".txt_mario").css("opacity","1");
+
+              };
+              if(sc>500){
+                $(".features").css("opacity","1");
+              }
+
+            });
+          
+           
+           
+        });
+    </script>
+</head>
+<body>
+       <header>
+        <div class="element">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="animate" >
+            <div class="img_style ">
+            <img src="images/vegeta_01.webp" alt="" class="image_01 images">
+             </div>
+            <div  class="img_style ">
+            <img src="images/صورة علم فلسطين جميلة للبروفايل.jpg" alt="" class="image_02 images">
+           </div>
+           <div class="img_style">
+            <img src="images/3d-game-wallpapers-168995-163123-3229344.png" alt="" class=" image_03 images">
+           </div>
+        </div>
+          <div class="txt">
+            <h1 >انتظروا انطلاق التطبيق قريبا</h1>
+          </div> 
+          <div class="counter" id="ff">
+             <div class="temporary ">
+                <div class="loader"></div>
+                <span class="time margin_mounth " id="mounth"></span>
+                <span class="priod margin_priod ">أشهر</span>
+             </div>
+             <div class="temporary">
+                <div class="loader loader_01"></div>
+                <span class="time ms-5 " id="days"></span>
+                <span class="priod margin">ايام</span>
+             </div>
+             <div class="temporary">
+                <div class="loader loader_02"></div>
+                <span class="time ms-4" id="hours"></span>
+                <span class="priod ms-3 ">ساعات</span>
+             </div>
+             <div class="temporary">
+                <div class="loader loader_03"></div>
+                <span class="time ms-5" id="muint"></span>
+                <span class="priod ms-5">دقائق</span>
+             </div>   
+             <div class="temporary ">
+                <div class="loader loader_04"></div>
+                <span class="time ms-4" id="seconds"></span>
+                <span class="priod ms-4" >ثواني</span>
+             </div>
+          </div>
+       </header>
+       <main>
+        <form class="form_group needs-validation form_finale" novalidate>
+            <input type="email" class="form-control email_main" placeholder="البريد الالكتروني" required > 
+            <button type="submit" class="btn btn-outline-warning style_button_main"><img src="images/rocket-1206.svg" alt="" class="rocket_style"></button>
+            <span class="txt_email">هل تريد تلقي اشعار فور الانطلاق</span>
+            <div class="invalid-feedback span_main">
+                 عذرا يرجى ادخال البريد الاكتروني 
+              </div>
+        </form>
+        <div class="banner_style">
+            <img src="images/banner01.svg" alt="" class="image_banner">
+            <h1 class="txt_game me-3" style="color: #1B2431;">مميزات اللعبة</h1>
+             <div class="features ">
+                <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="images/prush.png" alt="..." class="features_images">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>تصميم أنيق عصري</h5>
+                        <p class="p_style_features">هو ببساطة شكل نصي   الغاية هي الشكل وليس المحتوى تستخدم للطباعات</p>
+                    </div>
+                  </div>               
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="images/photo.png" alt="..." class="features_images">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>توجد صور للتفاصيل اللعبة</h5>
+                        <p class="p_style_features">هو ببساطة شكل نصي   الغاية هي الشكل وليس المحتوى تستخدم للطباعات</p>                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="images/mail.png" alt="..." class="features_images"> 
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>يمكنك ارسال الرسائل للاصدقائك  </h5>
+                        <p class="p_style_features">هو ببساطة شكل نصي   الغاية هي الشكل وليس المحتوى تستخدم للطباعات</p>                       </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="images/fork.png" alt="..." class="features_images">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>يمكنك مشاركة اللعبة كمجموعة</h5>
+                        <p class="p_style_features">هو ببساطة شكل نصي   الغاية هي الشكل وليس المحتوى تستخدم للطباعات</p>                     </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="images/phone.png" alt="..." class="features_images">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>اللعبة متوفرة بوضع الشاشة الممتلئ</h5>
+                        <p class="p_style_features">هو ببساطة شكل نصي   الغاية هي الشكل وليس المحتوى تستخدم للطباعات</p>                            </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="images/person-plus.png" alt="..." class="features_images">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>اضافة اصدقاء جدد للعبة</h5>
+                        <p class="p_style_features">هو ببساطة شكل نصي   الغاية هي الشكل وليس المحتوى تستخدم للطباعات</p>                    </div>
+                  </div> 
+            </div>
+        </div>
+        <div class="pragraph">
+          <img src="images/mario.png" alt="" class="img_mario">
+          <div class="txt_mario">
+              <h2 class="mt-5">إيجابيات الألعاب الإلكترونية</h2>
+              <p>للألعاب الإلكترونية دور مهم لا يمكننا أن نتجاهله في تنمية قدرة الطفل على تحليل المعلومات وزيادة الوعي والإدراك لما حوله بصورة أفضل وأسرع، كما أنها تزيد من مستوى الخيال العلمي والقدرة على حل المشكلات وغيرها من المهارات الاجتماعية والعلمية المهمة</p>
+              <h2 class="mt-5">فوائد الالعاب الاكترونية</h2>
+              <p>تزيد من الاداء المعرفي و زيادة التطوير المعرفي تزيد من قوة الاداء الحركي و التنسيق بين اليد و النظر في نفس الوقت كذلك تحسن مهارة القراءة تساهم في الاهتمام بتكنولوجيا</p>
+          </div>
+        </div>
+       </main>
+       <footer>
+        <div class="layer">
+          <h3 class="mb-5" style="color: #1B2431;margin-top: 10px;">قم باضافة بريدك الالكتروني ليصلك اشعار فور انطلاق التطبيق</h3>
+          <form  class="form_group needs-validation ms-4" novalidate>
+            <button type="submit" class="btn btn-outline-primary"><img src="images/rocket-1206.svg  " alt="" class=" rocket_footer" ></button>
+            <input type="email" class=" email_footer" required>
+            <div class="invalid-feedback">
+              <h3>عذرا يرجى ادخال البريد الاكتروني </h3>
+           </div>
+          </form>
+        </div>
+     
+     <div class="social_media">
+          <h3 class="txt_footer" >تابعنا على القنوات الاجتماعية</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a></li>
+            <li class="list-inline-item"><a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a></li>
+            <li class="list-inline-item"><a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a></li>
+            <li class="list-inline-item"><a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a></li>
+          </ul>
+          <hr>
+          <a href="mailto:17firas@gmail.com" class="email_footer">
+            <i class="fa-solid fa-envelope"></i>
+            17firas@gmail.com
+          </a>
+     </div>
+   
+       </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="js/page.js"></script>
+</body>
+</html>
